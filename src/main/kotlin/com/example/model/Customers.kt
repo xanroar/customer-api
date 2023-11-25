@@ -12,4 +12,8 @@ data class Customers(
     val name: String,
     val email: String,
     val phone: String
-)
+){
+    fun toDTO(): CustomersDTO {
+        return CustomersDTO(id = id, name = name, email = email, phone = phone)
+    }
+}

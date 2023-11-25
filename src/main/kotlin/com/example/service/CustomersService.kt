@@ -32,7 +32,7 @@ class CustomersService(private val customersRepository: CustomersRepository) {
     }
 
     @Cacheable("customersById", key = "#id")
-    fun getCustomerById(id: Int): Customers? {
+    fun getCustomerById(id: Int): Customers {
         println("LOG: call getCustomerById")
         return customersRepository.findById(id)
             .orElseThrow {
