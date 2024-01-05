@@ -1,7 +1,7 @@
 package com.example.service
 
 import com.example.model.Customers
-import com.example.model.CustomersDTO
+import com.example.dto.CustomersDTO
 import org.springframework.stereotype.Service
 
 @Service

@@ -1,5 +1,6 @@
 package com.example.model
 
+import com.example.dto.CustomersDTO
 import jakarta.persistence.*
 
 @Entity

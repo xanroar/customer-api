@@ -6,8 +6,8 @@ import org.springframework.boot.runApplication
 
 @SpringBootApplication
 @EnableCaching
-class CustomerApiApplication
+class CrmApplication
 
 fun main(args: Array<String>) {
-	runApplication<CustomerApiApplication>(*args)
+	runApplication<CrmApplication>(*args)
 }

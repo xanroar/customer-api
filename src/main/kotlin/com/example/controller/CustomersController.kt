@@ -1,6 +1,6 @@
 package com.example.controller
 
-import com.example.model.CustomersDTO
+import com.example.dto.CustomersDTO
 import com.example.service.CustomersService
 import org.springframework.web.bind.annotation.*
 
@@ -23,6 +23,6 @@ class CustomersController(private val customersService: CustomersService) {
     fun updateCustomer(@PathVariable id: Int, @RequestBody updatedCustomerDTO: CustomersDTO) = customersService.updateCustomer(id, updatedCustomerDTO.toEntity())
 
     @GetMapping("/customers/{id}")
-    fun getCustomerById(@PathVariable id: Int): CustomersDTO  = customersService.getCustomerById(id).toDTO()
+    fun getCustomerById(@PathVariable id: Int): CustomersDTO = customersService.getCustomerById(id).toDTO()
 
 }
